@@ -1,0 +1,32 @@
+﻿version: '3.1'
+ 
+networks:
+  postgres-net:
+    driver: bridge 
+ 
+services:
+  webapixdprueba:
+    image: webapixdprueba:latest
+    depends_on:
+      - postgres_image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:80
+    environment:
+      DB_CONNECTION_STRING: "host=postgres_image;port=5432;database=prueba;username=omar;password=example"
+    networks:
+      - postgres-net
+  
+  postgres_image:
+    image: postgres
+    ports:
+      - 5432:5432
+    restart: always
+    environment:
+      POSTGRES_USER: omar
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: prueba
+    networks:
+      - postgres-net
