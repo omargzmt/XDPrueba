@@ -6,7 +6,7 @@ networks:
  
 services:
   webapixdprueba:
-    image: webapixdprueba:latest
+    image: omargzmt/webapixdprueba:latest
     depends_on:
       - postgres_image
     build:
@@ -28,5 +28,8 @@ services:
       POSTGRES_USER: omar
       POSTGRES_PASSWORD: example
       POSTGRES_DB: prueba
+    volumes:
+      - /shared_folder/postgresql:/var/lib/postgresql
+      - ./dbscripts/seed.sql :/docker-entrypoint-initdb.d/seed.sql
     networks:
       - postgres-net
