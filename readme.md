@@ -25,7 +25,9 @@ cd XDPrueba
 docker-compose up -d
 ```
 
+```
 This app will be running in the port 3000 at [http://localhost:3000] and the get method will be in method:[http://localhost:3000/api/Person]
+```
 
 ## Notes
 
