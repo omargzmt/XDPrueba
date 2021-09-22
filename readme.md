@@ -1,18 +1,32 @@
 [![.NET Foundation](https://img.shields.io/badge/.NET%20Foundation-blueviolet.svg)](https://www.dotnetfoundation.org/)
 
-XDPrueba
+XDPrueba App
 ============
 
-## Ejecución de proyecto
+A sample app to demonstrate how to connect a web api to a postgres database using docker containers
 
-En tu máquina local clona este repositorio
-```bash
+Getting started
+---------------
+
+Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. [Docker Compose](https://docs.docker.com/compose) will be automatically installed. On Linux, make sure you have the latest version of [Compose](https://docs.docker.com/compose/install/). 
+
+## Linux and windows containers
+
+Clone this repo
+```
 git clone --recursive https://github.com/omargzmt/XDPrueba.git
-cd XDPrueba
+
 ```
 
-Para ejecutar el proyecto, escribir los siguientes comandos
+Run in CLI
 
-```bash
+```
+cd XDPrueba
 docker-compose up -d
 ```
+
+This app will be running in the port 3000 at [http://localhost:3000] and the get method will be in method:[http://localhost:3000/api/Person]
+
+## Notes
+
+This app is for testing and demonstrative purposes
