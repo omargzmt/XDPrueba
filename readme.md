@@ -31,4 +31,4 @@ This app will be running in port 3000 at [http://localhost:3000](http://localhos
 
 ## Notes
 
-This app is for testing and demonstrative purposes
+This app is for testing and demonstrative purposes only.
