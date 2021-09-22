@@ -5,9 +5,14 @@ XDPrueba
 
 ## Ejecución de proyecto
 
-Para ejecutar el proyecto, ir a la consola y posicionarse en XDPruebas dentro de esta carpeta y escribir los siguientes comandos
+En tu máquina local clona este repositorio
+```bash
+git clone --recursive https://github.com/omargzmt/XDPrueba.git
+cd XDPrueba
+```
+
+Para ejecutar el proyecto, escribir los siguientes comandos
 
 ```bash
-cd XDPrueba
 docker-compose up -d
 ```
