@@ -8,6 +8,6 @@ XDPrueba
 Para ejecutar el proyecto, ir a la consola y posicionarse en XDPruebas dentro de esta carpeta y escribir los siguientes comandos
 
 ```bash
-cd Pruebas
+cd XDPrueba
 docker-compose up -d
 ```
