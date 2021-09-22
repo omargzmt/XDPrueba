@@ -18,7 +18,7 @@ git clone --recursive https://github.com/omargzmt/XDPrueba.git
 
 ```
 
-Run in CLI
+Run in this folder
 
 ```
 cd XDPrueba
