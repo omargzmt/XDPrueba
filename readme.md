@@ -26,7 +26,7 @@ docker-compose up -d
 ```
 
 
-This app will be running in port 3000 at [http://localhost:3000](http://localhost:3000) and the get method will be in method:[http://localhost:3000/api/Person](http://localhost:3000/api/Person)
+This app will be running in port 3000 at [http://localhost:3000](http://localhost:3000) and the get method will be in: [http://localhost:3000/api/Person](http://localhost:3000/api/Person)
 
 
 ## Notes
