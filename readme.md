@@ -18,6 +18,11 @@ git clone --recursive https://github.com/omargzmt/XDPrueba.git
 
 ```
 
+You can build from source using:
+```
+docker-compose build
+```
+
 Run in this folder
 
 ```
