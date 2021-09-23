@@ -22,16 +22,15 @@ services:
   postgres_image:
     image: postgres
     ports:
-      - 5433:5432
+      - 5435:5432
     restart: always
     environment:
       POSTGRES_USER: omar
       POSTGRES_PASSWORD: example
       POSTGRES_DB: prueba
-    volumes:
-      - db_volume:/var/lib/postgresql/data
-      - ./dbscripts/seed.sql :/docker-entrypoint-initdb.d/seed.sql
     networks:
       - postgres-net
-volumes:
-  db_volume:
+    build:
+      context: .
+      dockerfile: DockerfilePostgres
+

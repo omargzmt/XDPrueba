@@ -1,0 +1,3 @@
+FROM postgres:latest
+
+COPY dbscripts/seed.sql /docker-entrypoint-initdb.d/
