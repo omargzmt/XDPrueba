@@ -22,7 +22,7 @@ services:
   postgres_image:
     image: postgres
     ports:
-      - 5435:5432
+      - 5433:5432
     restart: always
     environment:
       POSTGRES_USER: omar

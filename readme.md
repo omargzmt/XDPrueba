@@ -21,7 +21,7 @@ git clone --recursive https://github.com/omargzmt/XDPrueba.git
 Run in this folder
 
 ```
-cd XDPrueba
+cd XDPrueba/XDPrueba
 docker-compose up -d
 ```
 
